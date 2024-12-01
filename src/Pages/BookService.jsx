@@ -29,7 +29,7 @@ const BookService = () => {
         };
         console.log(booking);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://car-doctor-server-v2-c57l2wixi-codtob.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
