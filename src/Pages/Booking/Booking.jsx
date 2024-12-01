@@ -32,7 +32,7 @@ const Booking = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Confirm Delete?")) {
       try {
-        const response = await fetch(`http://localhost:5000/bookings/${id}`, {
+        const response = await fetch(`https://car-doctor-server-v2-orcin.vercel.app/${id}`, {
           method: 'DELETE'
         });
         const data = await response.json();
@@ -50,7 +50,7 @@ const Booking = () => {
   // Handle booking approval
   const handleApprove = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/bookings/${id}`, {
+      const response = await fetch(`https://car-doctor-server-v2-orcin.vercel.app/bookings/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'

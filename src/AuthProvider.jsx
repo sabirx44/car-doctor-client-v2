@@ -41,14 +41,14 @@ const AuthProvider = ({ children }) => {
 
             if (authUser) {
                 // If user is logged in, request JWT token
-                axios.post('http://localhost:5000/jwt', userPayload, { withCredentials: true })
+                axios.post('https://car-doctor-server-v2-orcin.vercel.app/jwt', userPayload, { withCredentials: true })
                     .then(response => {
                         console.log("JWT Token Response: ", response.data);
                     })
                     .catch(error => console.error("Error fetching token: ", error));
             } else {
                 // If no user, trigger logout in the backend
-                axios.post('http://localhost:5000/logout', userPayload, { withCredentials: true })
+                axios.post('https://car-doctor-server-v2-orcin.vercel.app/logout', userPayload, { withCredentials: true })
                     .then(response => {
                         console.log("Logout Response: ", response.data);
                     })
