@@ -50,7 +50,7 @@ const Booking = () => {
   // Handle booking approval
   const handleApprove = async (id) => {
     try {
-      const response = await fetch(`https://car-doctor-server-v2-orcin.vercel.app/bookings/${id}`, {
+      const response = await fetch(`https://car-doctor-server-v2-4yzdt9oa0-codtob.vercel.app/bookings/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
