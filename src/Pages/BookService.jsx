@@ -29,7 +29,7 @@ const BookService = () => {
         };
         console.log(booking);
 
-        fetch('https://car-doctor-server-v2-gig906v28-codtob.vercel.app/bookings', {
+        fetch('https://car-doctor-server-v2-orcin.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
